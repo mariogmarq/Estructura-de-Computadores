@@ -64,7 +64,7 @@ int main() {
     printf("\nIntroduce el pin: ");
     if ((n = scanf("%i", &pc)) == 0) scanf("%*s") == 1;
   } while (n != 1);
-  if (!pc != !passcode) boom();
+  if (pc != passcode) boom();
 
   gettimeofday(&tv1, NULL);
   if (tv1.tv_sec - tv2.tv_sec > TLIM) boom();
