@@ -1,0 +1,10 @@
+Esta práctica consiste en la ejecución de dos archivos, line.cc y size.cc.
+line.cc intenta ver el tiempo de acceso a la la cache, para ello se hacen
+varios bucles con distintos incrementos y podemos ver como a mayor tamaño de linea
+más rápida es la ejecución del programa.
+
+size.cc intenta medir cuanto se tarda en recorrer la cache. La línea bytes[(i*64)&(size-1)] ^= 1;
+trata de recorrer la cache de una forma homogenea y eficiente. 
+
+Todo esto se ha realizado con la ejecucion del makefile adjunto y se adjuntan capturas
+de lscpu, make info y el programa cpu-g
